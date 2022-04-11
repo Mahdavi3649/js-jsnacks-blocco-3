@@ -6,7 +6,7 @@ nel secondo solo le auto a diesel, nel terzo il resto delle auto.
 Infine stampa separatamente i 3 array */
 
 const arrayCars = [
-    // Primo modello - benz
+    // Primo modello - Benz
     {
         Marca: 'Benz',
         Modello: 'C100',
@@ -18,7 +18,7 @@ const arrayCars = [
         Modello: 'r7',
         Alimentazione: 'diesel'
     },
-    // Terzo modello - volvo
+    // Terzo modello - Volvo
     {
         Marca: 'volvo',
         Modello: 'mate1',
@@ -42,19 +42,19 @@ const arrayCars = [
         Modello: 'Tipo',
         Alimentazione: 'diesel'
     },
-    // Settimo modello - Nissan
+    // Settimo modello - Kia
     {
         Marca: 'Kia',
         Modello: 'k1',
         Alimentazione: 'elettrico'
     },
-    // Ottavo modello - Opel
+    // Ottavo modello - Nissan
     {
         Marca: 'Nissan',
         Modello: 'micra',
         Alimentazione: 'elettrico'
     },
-    // Nono modello - Volvo
+    // Nono modello - Opel
     {
         Marca: 'Opel',
         Modello: 'Lico',
@@ -67,21 +67,16 @@ const arrayCars = [
         Alimentazione: 'elettrico'
     },
 ]
-
-// Verifica in console log
 console.log(arrayCars);
 
 /* Dividi le automobili in 3 array separati: nel primo array solo le auto a benzina, nel secondo solo le auto a diesel, nel terzo il resto delle auto.
  */
 
 const benzina_auto = arrayCars.filter(auto => auto.Alimentazione == "benzina")
-
 console.log(benzina_auto);
 
 const diesel_auto = arrayCars.filter(auto => auto.Alimentazione == "diesel")
-
 console.log(diesel_auto);
 
 const resti = arrayCars.filter(auto => auto.Alimentazione !== "benzina" && auto.Alimentazione !== "diesel")
-
 console.log(resti);
