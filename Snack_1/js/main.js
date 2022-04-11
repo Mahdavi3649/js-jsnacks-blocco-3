@@ -70,3 +70,18 @@ const arrayCars = [
 
 // Verifica in console log
 console.log(arrayCars);
+
+/* Dividi le automobili in 3 array separati: nel primo array solo le auto a benzina, nel secondo solo le auto a diesel, nel terzo il resto delle auto.
+ */
+
+const benzina_auto = arrayCars.filter(auto => auto.Alimentazione == "benzina")
+
+console.log(benzina_auto);
+
+const diesel_auto = arrayCars.filter(auto => auto.Alimentazione == "diesel")
+
+console.log(diesel_auto);
+
+const resti = arrayCars.filter(auto => auto.Alimentazione !== "benzina" && auto.Alimentazione !== "diesel")
+
+console.log(resti);
